@@ -1,0 +1,305 @@
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  .page{width:100%;font-family:var(--font-sans)}
+  .hero{padding:28px 0 20px;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:24px}
+  .hero-eyebrow{font-size:11px;letter-spacing:.12em;color:var(--color-text-tertiary);margin-bottom:6px;text-transform:uppercase}
+  .hero-title{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:5px}
+  .hero-sub{font-size:13px;color:var(--color-text-secondary);line-height:1.6}
+  .panels{display:flex;gap:0;border:0.5px solid var(--color-border-tertiary);border-radius:16px;overflow:hidden;min-height:660px}
+  .panel{flex:1;transition:flex .5s cubic-bezier(.4,0,.2,1);overflow:hidden;cursor:default;position:relative;display:flex;flex-direction:column;border-right:0.5px solid var(--color-border-tertiary)}
+  .panel:last-child{border-right:none}
+  .panel:hover{flex:2}
+  .panel-visual{height:100px;position:relative;overflow:hidden;flex-shrink:0}
+  .panel-top{padding:18px 16px 14px;border-bottom:0.5px solid var(--color-border-tertiary)}
+  .concept-tag{font-size:10px;font-weight:500;letter-spacing:.1em;margin-bottom:8px;display:block}
+  .concept-title{font-size:14px;font-weight:500;color:var(--color-text-primary);line-height:1.35;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .concept-desc{font-size:11px;color:var(--color-text-secondary);line-height:1.6;min-height:44px}
+  .product-list{flex:1;padding:0 16px}
+  .product-item{padding:9px 0;border-bottom:0.5px solid var(--color-border-tertiary);display:flex;flex-direction:column;gap:2px}
+  .product-item:last-child{border-bottom:none}
+  .product-name{font-size:12px;font-weight:500;color:var(--color-text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .product-spec{font-size:11px;color:var(--color-text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:14px}
+  .product-price{font-size:11px;font-weight:500;margin-top:1px}
+  .panel-bottom{padding:14px 16px;border-top:0.5px solid var(--color-border-tertiary);margin-top:auto}
+  .pkg-icon{width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+  .pkg-label{font-size:10px;letter-spacing:.08em;color:var(--color-text-tertiary);margin-bottom:4px;text-transform:uppercase}
+  .pkg-name{font-size:12px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+  .pkg-desc{font-size:11px;color:var(--color-text-secondary);line-height:1.5}
+  .total-badge{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:5px 10px;border-radius:99px;font-size:11px;font-weight:500;border:0.5px solid}
+</style>
+
+<div class="page">
+  <div class="hero">
+    <div class="hero-eyebrow">KIA × 입사 사원 키트 2025</div>
+    <div class="hero-title">일상 속 영감을 상징하는 키트</div>
+    <div class="hero-sub">세 가지 라이프스타일 컨셉 중 하나를 선택하고, 공통 키트와 함께 첫날을 시작하세요.</div>
+  </div>
+
+  <div class="panels">
+
+    <!-- DAILY -->
+    <div class="panel">
+      <div class="panel-visual" style="background:#F5EFE4">
+        <svg width="100%" height="100%" viewBox="0 0 260 100" preserveAspectRatio="xMidYMid slice">
+          <rect width="260" height="100" fill="#F5EFE4"/>
+          <polygon points="160,0 260,0 260,100 110,100" fill="#FFFCF5" opacity="0.5"/>
+          <rect x="0" y="66" width="260" height="34" fill="#E8DCC8"/>
+          <rect x="0" y="64" width="260" height="4" fill="#D4C5A9"/>
+          <rect x="14" y="68" width="130" height="30" fill="#2C2C28" rx="2"/>
+          <rect x="155" y="50" width="20" height="24" rx="4" fill="#3A3A38"/>
+          <rect x="158" y="53" width="14" height="18" rx="3" fill="#4A4A48"/>
+          <rect x="162" y="58" width="6" height="7" rx="1" fill="#6A9ACF" opacity="0.8"/>
+          <rect x="144" y="69" width="10" height="14" rx="2" fill="#C8845A"/>
+          <circle cx="215" cy="22" r="1.2" fill="#FDEEC0" opacity="0.7"/>
+          <circle cx="200" cy="44" r="0.8" fill="#FDEEC0" opacity="0.5"/>
+          <circle cx="230" cy="36" r="0.7" fill="#FDEEC0" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="panel-top">
+        <span class="concept-tag" style="color:#C8845A">DAILY</span>
+        <div class="concept-title">일상 속 공간에서 영감을 얻다</div>
+        <div class="concept-desc">테이블에 앉아 정돈된 공간에서 자신의 개성을 세팅할 수 있는 차분한 제품 구성입니다.</div>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-name">티코스터</div>
+          <div class="product-spec">100% 국내 니트코튼</div>
+          <div class="product-price" style="color:#C8845A">8,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">아크릴 스탠드</div>
+          <div class="product-spec">브랜드 에셋을 담은 아크릴 스탠드</div>
+          <div class="product-price" style="color:#C8845A">4,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">데스크매트</div>
+          <div class="product-spec">100% 국내 니트코튼</div>
+          <div class="product-price" style="color:#C8845A">9,890원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">거치형 충전기</div>
+          <div class="product-spec">스마트폰·워치·이어폰 동시 충전</div>
+          <div class="product-price" style="color:#C8845A">37,835원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">레이어블 명함 거치대</div>
+          <div class="product-spec">3D 프린트 제작</div>
+          <div class="product-price" style="color:#C8845A">7,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">레이어블 모니터 피규어</div>
+          <div class="product-spec">모니터 거치 로고 피규어</div>
+          <div class="product-price" style="color:#C8845A">25,000원</div>
+        </div>
+      </div>
+      <div class="panel-bottom">
+        <div class="pkg-icon" style="background:#FFF5EE">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="5" width="14" height="10" rx="2" stroke="#C8845A" stroke-width="1.2"/><path d="M4 5V4a4 4 0 018 0v1" stroke="#C8845A" stroke-width="1.2" stroke-linecap="round"/><line x1="1" y1="9" x2="15" y2="9" stroke="#C8845A" stroke-width="1" opacity="0.4"/></svg>
+        </div>
+        <div class="pkg-label">추천 패키징</div>
+        <div class="pkg-name">G형 박스 패키지</div>
+        <div class="pkg-desc">박스 인쇄 및 고정대 포함 · 21,160원</div>
+        <div class="total-badge" style="color:#C8845A;border-color:#C8845A;background:#FFF5EE">합계 109,285원</div>
+      </div>
+    </div>
+
+    <!-- ACTIVE -->
+    <div class="panel">
+      <div class="panel-visual" style="background:#ECEEED">
+        <svg width="100%" height="100%" viewBox="0 0 260 100" preserveAspectRatio="xMidYMid slice">
+          <rect width="260" height="100" fill="#ECEEED"/>
+          <polygon points="-10,0 80,0 180,100 -10,100" fill="#F4F5F3" opacity="0.5"/>
+          <line x1="80" y1="0" x2="180" y2="100" stroke="#FAFAFA" stroke-width="4" opacity="0.3"/>
+          <g transform="translate(30,20) rotate(-5)">
+            <rect x="0" y="0" width="140" height="66" rx="7" fill="#2A2A28"/>
+            <rect x="4" y="4" width="132" height="58" rx="5" fill="#343432"/>
+            <line x1="6" y1="14" x2="134" y2="14" stroke="#3E3E3C" stroke-width="0.7"/>
+            <rect x="55" y="5" width="26" height="4" rx="2" fill="#4A4A48"/>
+          </g>
+          <rect x="175" y="22" width="34" height="48" rx="5" fill="#E8E8E6" transform="rotate(-5,192,46)"/>
+          <rect x="179" y="26" width="26" height="36" rx="3" fill="#F5F5F3" transform="rotate(-5,192,44)"/>
+          <rect x="183" y="42" width="16" height="6" rx="3" fill="#5A9ADF" opacity="0.9" transform="rotate(-5,191,45)"/>
+        </svg>
+      </div>
+      <div class="panel-top">
+        <span class="concept-tag" style="color:#4A6E9A">ACTIVE</span>
+        <div class="concept-title">움직임 속 영감을 얻다</div>
+        <div class="concept-desc">출장·미팅을 준비하고 이동할 때, 도보와 차량 모두에 어울리는 휴대용 테크 제품 위주로 구성했습니다.</div>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-name">양말 2종 + 박스 패키지</div>
+          <div class="product-spec">자수 인쇄 포함</div>
+          <div class="product-price" style="color:#4A6E9A">14,500원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">자동차 번호판</div>
+          <div class="product-spec">&nbsp;</div>
+          <div class="product-price" style="color:#4A6E9A">10,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">맥세이프 보조배터리</div>
+          <div class="product-spec">&nbsp;</div>
+          <div class="product-price" style="color:#4A6E9A">34,385원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">노트북 거치대</div>
+          <div class="product-spec">&nbsp;</div>
+          <div class="product-price" style="color:#4A6E9A">31,000원</div>
+        </div>
+      </div>
+      <div class="panel-bottom">
+        <div class="pkg-icon" style="background:#EEF3FA">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="6" width="14" height="9" rx="2" stroke="#4A6E9A" stroke-width="1.2"/><path d="M4 6V4a4 4 0 018 0v2" stroke="#4A6E9A" stroke-width="1.2" stroke-linecap="round"/><line x1="5" y1="1" x2="5" y2="4" stroke="#4A6E9A" stroke-width="1.2" stroke-linecap="round"/><line x1="11" y1="1" x2="11" y2="4" stroke="#4A6E9A" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="pkg-label">추천 패키징</div>
+        <div class="pkg-name">G형 박스 패키지</div>
+        <div class="pkg-desc">21,160원</div>
+        <div class="total-badge" style="color:#4A6E9A;border-color:#4A6E9A;background:#EEF3FA">합계 111,045원</div>
+      </div>
+    </div>
+
+    <!-- COMPACT -->
+    <div class="panel">
+      <div class="panel-visual" style="background:#1A1C22">
+        <svg width="100%" height="100%" viewBox="0 0 260 100" preserveAspectRatio="xMidYMid slice">
+          <rect width="260" height="100" fill="#1A1C22"/>
+          <ellipse cx="210" cy="26" rx="80" ry="50" fill="#2A3A5C" opacity="0.6"/>
+          <rect x="162" y="10" width="4" height="8" rx="2" fill="#F0C860" opacity="0.6"/>
+          <rect x="176" y="7" width="4" height="7" rx="2" fill="#E8D0A0" opacity="0.45"/>
+          <rect x="190" y="12" width="4" height="8" rx="2" fill="#F0C860" opacity="0.5"/>
+          <rect x="204" y="5" width="3" height="7" rx="1" fill="#A8C0E0" opacity="0.5"/>
+          <rect x="218" y="9" width="5" height="8" rx="2" fill="#F0B840" opacity="0.4"/>
+          <rect x="0" y="68" width="260" height="32" fill="#222428"/>
+          <rect x="0" y="65" width="260" height="5" fill="#2C2E34"/>
+          <rect x="12" y="54" width="110" height="64" rx="5" fill="#1A1E28" transform="rotate(-3,67,86)"/>
+          <rect x="16" y="58" width="102" height="54" rx="3" fill="#222838" transform="rotate(-3,67,85)"/>
+          <rect x="140" y="62" width="30" height="20" rx="3" fill="#2E3240" transform="rotate(6,155,72)"/>
+          <circle cx="147" cy="72" r="3" fill="#4A5060" transform="rotate(6,155,72)"/>
+          <circle cx="162" cy="72" r="3" fill="#4A5060" transform="rotate(6,155,72)"/>
+        </svg>
+      </div>
+      <div class="panel-top">
+        <span class="concept-tag" style="color:#9080D0">COMPACT</span>
+        <div class="concept-title">낯선 환경에서 영감을 얻다</div>
+        <div class="concept-desc">해외 출장·여행지 등 짧은 기간 머무는 장소에 두고 쓰기 좋은 이동 편의 제품 위주로 구성했습니다.</div>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-name">네임택 (여행용)</div>
+          <div class="product-spec">PVC</div>
+          <div class="product-price" style="color:#9080D0">5,923원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">니트 블랭킷</div>
+          <div class="product-spec">&nbsp;</div>
+          <div class="product-price" style="color:#9080D0">44,275원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">여권 케이스</div>
+          <div class="product-spec">PVC 여권 케이스</div>
+          <div class="product-price" style="color:#9080D0">6,900원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">방수 멀티팩</div>
+          <div class="product-spec">&nbsp;</div>
+          <div class="product-price" style="color:#9080D0">17,135원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">수건</div>
+          <div class="product-spec">18수 고급 · 자수 인쇄 포함</div>
+          <div class="product-price" style="color:#9080D0">8,165원</div>
+        </div>
+      </div>
+      <div class="panel-bottom">
+        <div class="pkg-icon" style="background:#F0EDF8">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12l-1.5 10H3.5L2 4z" stroke="#9080D0" stroke-width="1.2" stroke-linejoin="round"/><path d="M5 4V3a3 3 0 016 0v1" stroke="#9080D0" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="pkg-label">추천 패키징</div>
+        <div class="pkg-name">트래블백</div>
+        <div class="pkg-desc">면 100% 국내 제품 · 39,100원</div>
+        <div class="total-badge" style="color:#9080D0;border-color:#9080D0;background:#F0EDF8">합계 121,498원</div>
+      </div>
+    </div>
+
+    <!-- COMMON -->
+    <div class="panel">
+      <div class="panel-visual" style="background:#1E2228">
+        <svg width="100%" height="100%" viewBox="0 0 260 100" preserveAspectRatio="xMidYMid slice">
+          <rect width="260" height="100" fill="#1E2228"/>
+          <rect x="0" y="0" width="260" height="100" fill="#232830"/>
+          <!-- KIA wordmark-style grid pattern -->
+          <line x1="0" y1="20" x2="260" y2="20" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="0" y1="40" x2="260" y2="40" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="0" y1="60" x2="260" y2="60" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="0" y1="80" x2="260" y2="80" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="52" y1="0" x2="52" y2="100" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="104" y1="0" x2="104" y2="100" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="156" y1="0" x2="156" y2="100" stroke="#2E3540" stroke-width="0.5"/>
+          <line x1="208" y1="0" x2="208" y2="100" stroke="#2E3540" stroke-width="0.5"/>
+          <!-- Product silhouettes scattered -->
+          <rect x="20" y="28" width="28" height="18" rx="3" fill="#E8262A" opacity="0.85"/>
+          <rect x="22" y="30" width="24" height="14" rx="2" fill="#F03236" opacity="0.9"/>
+          <rect x="66" y="22" width="22" height="32" rx="3" fill="#3A3E48" opacity="0.8"/>
+          <rect x="68" y="24" width="18" height="28" rx="2" fill="#484E5A" opacity="0.9"/>
+          <ellipse cx="140" cy="38" rx="18" ry="18" fill="#3A3E48" opacity="0.7"/>
+          <ellipse cx="140" cy="38" rx="12" ry="12" fill="#484E5A" opacity="0.8"/>
+          <ellipse cx="140" cy="38" rx="5" ry="5" fill="#5A6070" opacity="0.9"/>
+          <rect x="170" y="26" width="60" height="28" rx="14" fill="#3A3E48" opacity="0.7"/>
+          <rect x="172" y="28" width="56" height="24" rx="12" fill="#484E5A" opacity="0.8"/>
+          <!-- 400 sets badge -->
+          <rect x="16" y="68" width="60" height="20" rx="10" fill="#E8262A" opacity="0.9"/>
+          <text x="46" y="81" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="500" fill="#fff">400 sets</text>
+        </svg>
+      </div>
+      <div class="panel-top">
+        <span class="concept-tag" style="color:#E8262A">COMMON</span>
+        <div class="concept-title">KIA 구성원 모두가 함께하다</div>
+        <div class="concept-desc">구성원 전체 키트에 공통으로 들어가는 제품 리스트입니다.</div>
+      </div>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-name">호신용품</div>
+          <div class="product-spec">제품 풀컬러 커스텀</div>
+          <div class="product-price" style="color:#E8262A">40,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">커스텀 클리커</div>
+          <div class="product-spec">맞춤 제작</div>
+          <div class="product-price" style="color:#E8262A">10,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">프리미엄 우양산</div>
+          <div class="product-spec">원단 풀컬러 커스텀</div>
+          <div class="product-price" style="color:#E8262A">25,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">수면안대 + 패키징</div>
+          <div class="product-spec">앞면 로고 자수 인쇄</div>
+          <div class="product-price" style="color:#E8262A">10,000원</div>
+        </div>
+        <div class="product-item">
+          <div class="product-name">모자</div>
+          <div class="product-spec">로고 자수 + 라벨</div>
+          <div class="product-price" style="color:#E8262A">13,800원</div>
+        </div>
+      </div>
+      <div class="panel-bottom">
+        <div class="pkg-icon" style="background:#FEF0F0">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="5" width="14" height="10" rx="2" stroke="#E8262A" stroke-width="1.2"/><path d="M4 5V4a4 4 0 018 0v1" stroke="#E8262A" stroke-width="1.2" stroke-linecap="round"/><line x1="1" y1="9" x2="15" y2="9" stroke="#E8262A" stroke-width="1" opacity="0.4"/><line x1="8" y1="5" x2="8" y2="15" stroke="#E8262A" stroke-width="1" opacity="0.3"/></svg>
+        </div>
+        <div class="pkg-label">추천 패키징</div>
+        <div class="pkg-name">G형 상자 + 내장재 개발</div>
+        <div class="pkg-desc">7,500원</div>
+        <div class="total-badge" style="color:#E8262A;border-color:#E8262A;background:#FEF0F0">합계 106,300원</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:0.5px solid var(--color-border-tertiary)">
+    <span style="font-size:12px;color:var(--color-text-tertiary)">모든 구성품 기아 로고 각인 필수 · 제조원가 기준</span>
+    <span style="font-size:12px;color:var(--color-text-tertiary)">1인 1컨셉 선택 + 공통 키트 지급</span>
+  </div>
+</div>
